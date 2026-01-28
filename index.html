@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Aventura Gráfica - Pandora</title>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#proyecto">Proyecto</a></li>
+                <li class="nav-item"><a class="nav-link" href="#equipo">Equipo</a></li>
+                <li class="nav-item"><a class="nav-link" href="#jugar">Jugar</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section id="inicio" class="hero-section">
+    <div class="container">
+        <h1>Aventura Gráfica del Mito de la Caja de Pandora</h1>
+        <p class="lead">Web interactiva de Bootstrap + p5.js</p>
+
+        <div class="row mt-5 g-4">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <img src="data/paleta.png" class="icon-img" alt="Visual">
+                        <h5 class="card-title">Contenido Visual</h5>
+                        <p class="card-text">Gráficos diseñados con creatividad usando IA y p5.js</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <img src="data/click.png" class="icon-img" alt="Interacción">
+                        <h5 class="card-title">Interactivo</h5>
+                        <p class="card-text">Tus decisiones cambian el destino final de la historia</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <img src="data/libro.png" class="icon-img" alt="Narrativa">
+                        <h5 class="card-title">Narrativo</h5>
+                        <p class="card-text">Un mito con múltiples finales</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="proyecto" class="py-5">
+    <div class="container">
+
+        <div class="content-section">
+            <h2 class="section-title">Temática del Proyecto</h2>
+            <p class="lead">
+                Nuestra aventura gráfica se desarrolla en la mitología griega.
+                El jugador resolverá enigmas y tomará decisiones que afectarán el equilibrio
+                entre el caos y la esperanza.
+            </p>
+            <p>
+                Pandora explora escenarios, enfrenta dilemas y cada decisión conduce a un destino distinto.
+            </p>
+        </div>
+
+        <div class="content-section">
+            <h2 class="section-title">Producción</h2>
+
+            <div class="production-box">
+                <h4>Etapa 1</h4>
+                <p>Elegimos el mito, definimos escenas y narrativa principal.</p>
+
+                <h4>Etapa 2</h4>
+                <p>Diseñamos personajes y escenarios asistidos por IA.</p>
+
+                <h4>Etapa 3</h4>
+                <p>Programamos pantallas, decisiones y rutas narrativas en p5.js.</p>
+
+                <h4>Etapa 4</h4>
+                <p>Testeamos, ajustamos y sumamos menú inicial + créditos.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="equipo" class="py-5">
+    <div class="container">
+        <div class="content-section">
+            <h2 class="section-title">Equipo</h2>
+
+            <div class="row g-4 mt-3 justify-content-center">
+                <div class="col-md-5">
+                    <div class="team-card">
+                        <img src="data/orangecat.jpg" class="icon-img" alt="Ursula">
+                        <h5>Ursula</h5>
+                    </div>
+                </div>
+
+                <div class="col-md-5">
+                    <div class="team-card">
+                        <img src="data/blackcat.jpg" class="icon-img" alt="Darkko">
+                        <h5>Darkko</h5>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="jugar" class="py-5">
+  <div class="container">
+    <div class="game-container">
+      <h2 class="text-center mb-4">Aventura Gráfica Interactiva</h2>
+      <div class="alert alert-info" role="alert">
+        <ul class="mb-0">
+          <li>Haz click en las opciones para avanzar</li>
+          <li>Tus decisiones afectarán el desenlace final</li>
+        </ul>
+      </div>
+      <div class="game-frame mt-4">
+        <iframe 
+          src="p5/jugar.html" 
+          title="Aventura Gráfica"
+          width="640" 
+          height="480"
+          style="border:none; display:block; margin:0 auto;">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+    <div class="container">
+        <h5>Sitio web de la Aventura Gráfica Interactiva</h5>
+        <p>TP Final — Etapa 3 · Sarlangue Seanna Ursula</p>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
